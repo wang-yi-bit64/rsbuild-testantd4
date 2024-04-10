@@ -4,7 +4,7 @@ import { pluginReact } from '@rsbuild/plugin-react';
 export default defineConfig({
   plugins: [pluginReact()],
   server: {
-    port: 8001,
+    port: 8023,
     proxy: {
       "/api": {
         target: "http://localhost:8085",
@@ -35,7 +35,6 @@ export default defineConfig({
           "@border-color-base": "#e5e5e5",
           "@menu-dark-bg": "#3e3e3e",
           "@text-color": "#666",
-          "@font-family:": "\"Hiragino Sans GB\", Helvetica, \"sans-serif\"",
           "@icon-url": "/antd/iconfont",
           "@dark-half": "#494949",
           "@purple": "#d897eb",
